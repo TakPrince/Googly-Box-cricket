@@ -1,0 +1,53 @@
+.About-us{
+    display: flex;
+    gap: 2rem;
+    padding: 0 2rem;
+   margin-top: 4rem;
+   bottom: 2rem;
+}
+.aboutusContent{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.heading{
+    display: flex;
+    text-transform: uppercase;
+    gap: 1rem;
+    font-weight: bold;
+    font-size: 3rem;
+    flex-direction: column;
+    padding-bottom: 3rem;
+}
+
+.aboutusContent>:nth-child(2){
+    letter-spacing: 2px;
+    line-height: 35px;
+}
+
+
+@media screen and (max-width:768px) {
+    .About-us{
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .heading{
+
+     flex-direction: column;
+        gap: 0.5rem;
+        font-size: xx-large;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .aboutusContent>:nth-child(2){
+        letter-spacing: 1px;
+            line-height: 30px;
+    }
+    .map-container>iframe{
+        width: 16.5rem;
+        height: 20rem;
+    }
+
+}

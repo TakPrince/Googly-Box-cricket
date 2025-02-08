@@ -1,0 +1,245 @@
+.program-detail {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+}
+
+.programDetail-l {
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    color: white;
+    max-width: 50%; /* Prevents it from becoming too wide */
+}
+
+.programDetail-header {
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.programDetail-header > :nth-child(1) {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.program-heading {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.program-description {
+    text-transform: none;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 25px;
+    color: var(--orange);
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.programDetail-l > span > h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.program-reasons {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px;
+}
+
+.program-reason {
+    color: #fff;
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.program-reason > img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.back-btn:hover {
+    background-color: var(--orange);
+    color: white;
+}
+
+.programDetail-r {
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    max-width: 50%; /* Prevents it from becoming too wide */
+}
+
+.programDetail-r > img {
+    max-width: 45rem;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.program-about {
+    letter-spacing: 2px;
+    line-height: 30px;
+    gap: 1rem;
+    color: white;
+}
+
+.program-about > span > h2 {
+    font-size: 2.5rem;
+    text-align: end;
+    font-weight: bold;
+    color: rgb(211, 208, 208);
+}
+
+/* Responsive styles for .plans-container */
+.plans-container {
+    margin-top: 4rem;
+    padding: 0 2rem;
+    display: flex;
+    gap: 4rem;
+    flex-direction: column;
+    position: relative;
+}
+
+.plans {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap; /* Allow wrapping of plans */
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--caloryCard);
+    color: white;
+    gap: 3rem;
+    padding: 1.5rem;
+    width: 15rem;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.plan:nth-child(2) {
+    background: var(--planCard);
+    height: 38rem;
+}
+
+.plan > svg {
+    fill: orange;
+    width: 2rem;
+    height: 2rem;
+}
+
+.plan > :nth-child(2) {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.plan > :nth-child(3) {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.plan > :nth-child(5) {
+    font-size: 0.8rem;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.feature > img {
+    width: 1rem;
+}
+
+.plan:nth-child(2) > svg {
+    fill: white;
+}
+
+.plan:nth-child(2) > .btn {
+    color: orange;
+}
+
+.blur-p1 {
+    width: 32rem;
+    height: 23rem;
+    top: 6rem;
+    left: 0rem;
+}
+
+.blur-p2 {
+    width: 32rem;
+    height: 23rem;
+    top: 10rem;
+    right: 0rem;
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+    .program-detail {
+        flex-direction: column;
+        gap: 1rem; 
+        margin-top: 3rem;
+    }
+
+    .programDetail-l, .programDetail-r {
+        max-width: 100%; /* Ensure full width for smaller screens */
+    }
+
+    .program-heading {
+        font-size: 2.5rem; /* Reduce heading size on smaller screens */
+    }
+
+    .program-reason {
+        font-size: 0.9rem; 
+        text-align: start;    }
+
+    .plans-container {
+        padding: 0 1rem; /* Less padding on small screens */
+    }
+
+    .plans {
+        flex-direction: column; /* Stack plans vertically on mobile */
+        gap: 2rem; /* Reduce gap between plans */
+    }
+
+    .plan {
+        width: 100%; /* Ensure plan takes full width */
+        height: auto; /* Remove fixed height */
+    }
+
+    .plan:nth-child(2) {
+        height: auto; /* Remove fixed height */
+    }
+    
+    .program-about > span > h2{
+
+    text-align: center;
+    font-size: 1.51rem;
+    font-weight: bold;
+    color: rgb(211, 208, 208);
+    }
+
+    .back-btn{
+        position: absolute;
+        top: 1rem;
+        left: 5.5rem;
+    }
+
+}
